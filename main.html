@@ -5,18 +5,36 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"/>
 
 </head>
-<body>
-  <h1>Hoola!</h1>
+=======
+<body bgcolor="#3CBC8D">
+  <center>
+  <h1>Social Baica</h1>
+  <!-- <input id= "formCom" name = "TextComen" type="text">   
+  <button id= "btnRegistroPost">publica</button>
+  <div id= "publicar"></div>
+  <ul id="baica-list"></ul>
+  -->
+ 
+  <div class= "content">
+    <form id="formCom">
+      <input type="text" name= "autor" placeholder="Autor">
+      <input type="text" name= "comentario" placeholder="Comentario">
+      <button>Publica</button>
+    </form>
+    <ul id="baica-list"></ul> 
+  </div>
 
-  <div>
-    <input type = "text" id="estado">
-    <button type="button" id="enviar">Enviar</button>
-</div>
+</center>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+
   <script src='fireBase.js'></script>
-  <script src='main.js'></script>
-  <script src= "login.js"></script>
+  <script src='post.js'></script>
+  <script src='postController.js'></script>
 </body>
 </html>
