@@ -8,3 +8,4 @@ firebase.initializeApp({
   "projectId": "friendlychat-1234",
   "appId": "1:1234567890:web:123456abcdef"
 });
+
